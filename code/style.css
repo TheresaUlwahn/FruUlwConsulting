@@ -41,23 +41,21 @@ p {
   color: #000000;
 }
 
-header {
+.hero-container {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	height: 820px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Deskpic.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+  background-attachment: fixed;
 	position: relative;
-}
-
-.hero-container {
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	display: block;
 
 }
 
@@ -66,11 +64,17 @@ header {
 	/*padding on both of the sides, the horisontal parts to make space from the boarder*/
 	
 .nav-bar {
-	background: transparent;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	height: 80px;
 	display: flex;
 	align-items: center;
+	/*position: relative;*/
+	justify-content: space-evenly;
 	padding: 0px 16px;
+	overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .nav-bar p {
@@ -82,6 +86,10 @@ header {
 /*flex/direction column to make them separate*/
 /*justify content to make them spread out / space between the lines*/
 /*margin right for space between the hamburger and logo*/
+
+.nav-bar img {
+	display: none;
+}
 
 .hamburger {
 	display: flex;
@@ -143,8 +151,13 @@ nav a {
 
 .header-icons {
   display: flex;
-  text-align: center;
+	text-align: center;
+	margin-top: 30px;
+    justify-content: center;
 }
+
+
+
 
 .hIconCircle {
   width: 49px;
@@ -171,9 +184,10 @@ nav a {
 		align-self: flex-end;
 	}
 
-	header {
+	/*.hero-container {
 		height: 1025px;
-	}
+		background-position: bottom;
+	}*/
 	/* .hero-container {
 		padding: 420px 0;
 }  */
@@ -181,6 +195,8 @@ nav a {
 	.nav-bar {
 		justify-content: space-between;
 	}
+
+	
 	nav {
 		display: inline-block;
 	}
@@ -225,18 +241,17 @@ nav a {
 	.header-profile {
 		align-self: flex-end;
 	}
-	header {
-		height: 1250px;
-	}
+	/*.hero-container {
+		height: 1030px;
+		bottom: initial;
+	}*/
 	/* .hero-container {
 		padding: 395px 0;
 	}  */
 	.nav-bar {
-		padding: 0;
+		padding: 15px;
     height: 72px;
-    position: fixed;
     top: 0;
-    width: 100%;
     z-index: 100;
 	}
 }  
