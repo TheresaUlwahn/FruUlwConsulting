@@ -1,0 +1,160 @@
+/* Header */
+
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+  background: #ffff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 49px;
+}
+
+h2 {
+  font: Bold 21px/25px Montserrat;
+  color: #fff;
+  background-color: #fa382f;
+  padding: 0 4px;
+}
+
+h3 {
+  font: Bold 21px/25px Montserrat;
+  color: #fa382f;
+  margin: 0px;
+  text-align: center;
+}
+
+h4 {
+  font: 400 17px/29px Roboto;
+  color: #fa382f;
+  text-align: left;
+}
+
+p {
+  font-size: 12px;
+  line-height: 2;
+  color: #000000;
+}
+
+header {
+  /* The "linear-gradient" gives a darker feeling to the hero image*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/Deskpic.JPG");
+  background-repeat: no-repeat;
+  /* To make the hero picture cover the screen */
+  background-size: cover;
+  background-position: center;
+  /* The image change size on all screens */
+}
+
+.hero-container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 289px 0;
+	/* padding: 30px 0; */
+	height: 100%;
+	
+	/* Original from Portfolio*/
+	/* width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0; */
+  /* padding: 30px 0; */
+  /* height: 100%; */
+}
+
+.header-label {
+  margin: 20px 0;
+}
+
+.header-label p {
+  color: #fff;
+  font: Bold 13px/15px Roboto;
+}
+
+.header-label h1 {
+  color: #fff;
+  font: Bold 40px/49px Montserrat;
+}
+
+/* .header-profile {
+  width: 132px;
+  height: 132px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+} */
+
+.header-icons {
+  display: flex;
+  text-align: center;
+}
+
+.hIconCircle {
+  width: 49px;
+  height: 49px;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hIconImg {
+  width: 22px;
+  height: 22px;
+}
+
+/*******MEDIA QUERIES *********/
+
+@media (min-width: 650px) {
+	.header-icons,
+	.header-profile {
+		align-self: flex-end;
+	}
+
+/* header {
+		padding: 289px 0;
+	} */
+	/* .header-profile {
+		margin-bottom: -50px;
+	} */
+
+	/* .box {
+		padding: 60px 0;
+	} */
+
+	/* .summary-box p {
+		text-align: left;
+	} */
+
+	/* .featured-projects,
+	.my-thoughts {
+		width: 80%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	} */
+
+	/* .projects,
+	.thought {
+		width: 40%;
+		flex-grow: 1;
+		margin: 20px;
+	} */
+
+	/* .skills ul {
+		width: 20%;
+	} */
+
+}
+  
+  
