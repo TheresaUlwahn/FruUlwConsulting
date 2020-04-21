@@ -9,7 +9,8 @@ html {
 }
 
 h1 {
-  font-size: 49px;
+	font-size: 49px;
+	color: #fff;
 }
 
 h2 {
@@ -39,6 +40,7 @@ p {
 }
 
 header {
+	height: 100%;
   /* The "linear-gradient" gives a darker feeling to the hero image*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("assets/Deskpic.JPG");
@@ -46,7 +48,8 @@ header {
   /* To make the hero picture cover the screen */
   background-size: cover;
   background-position: center;
-  /* The image change size on all screens */
+	/* The image change size on all screens */
+	padding: 191px;
 }
 
 .hero-container {
@@ -56,7 +59,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 240px 0;
+	/* padding: 240px 0; */
 	height: 100%;
  
 	
@@ -70,6 +73,65 @@ header {
   padding: 100px 0; */
   /* padding: 30px 0; */
   /* height: 100%; */
+}
+
+/********* Nav-bar**********/
+	/*this div becomes the container for the header  display flex and the items are centered*/
+	/*padding on both of the sides, the horisontal parts to make space from the boarder*/
+	
+.nav-bar {
+	background: transparent;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	padding: 0px 16px;
+}
+
+.nav-bar p {
+	color: #fff;
+}
+/*nav bar becomes hamburger model*/
+/*this div becomes the container for the hamburger menu,  display flex*/
+/*same height and width to make it a square*/
+/*flex/direction column to make them separate*/
+/*justify content to make them spread out / space between the lines*/
+/*margin right for space between the hamburger and logo*/
+
+.hamburger {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 24 px;
+}
+/*here the actual lines for the hamburger menu, same width as the container, but thinner*/
+
+.hamburger div {
+	width: 30px;
+	height: 5px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.nav-bar img {
+	width: 180px;
+	padding: 0px 15px;
+}
+/*the nav is hidden on the small screen*/
+
+nav {
+	display: none;
+}
+/*links get color blue by default. we make them white and no line under the text*/
+/*margin left to give space between the menu links and not mess with the outer edges*/
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	align-items: right;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 .header-label {
@@ -126,6 +188,16 @@ header {
 	.hero-container {
 		padding: 420px 0;
 } 
+
+	.nav-bar {
+		justify-content: space-between;
+	}
+	nav {
+		display: inline-block;
+	}
+	.hamburger {
+		display: none;
+}
 	/* .header-profile {
 		margin-bottom: -50px;
 	} */
