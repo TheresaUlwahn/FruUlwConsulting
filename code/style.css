@@ -2,7 +2,9 @@
 
 body,
 html {
-  margin: 0;
+	margin: 0;
+	height: 100%;
+	max-width: 100%;
   overflow-x: hidden;
   background: #ffff;
   font-family: "Roboto", sans-serif;
@@ -40,39 +42,23 @@ p {
 }
 
 header {
-	height: 100%;
-  /* The "linear-gradient" gives a darker feeling to the hero image*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/Deskpic.JPG");
-  background-repeat: no-repeat;
-  /* To make the hero picture cover the screen */
-  background-size: cover;
-  background-position: center;
-	/* The image change size on all screens */
-	padding: 191px;
+	height: 820px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Deskpic.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
 }
 
 .hero-container {
 	width: 80%;
+	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* padding: 240px 0; */
-	height: 100%;
- 
-	
-	/* Original from Portfolio*/
-	/* width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0; */
-  /* padding: 30px 0; */
-  /* height: 100%; */
+
 }
 
 /********* Nav-bar**********/
@@ -178,16 +164,19 @@ nav a {
 
 /*******MEDIA QUERIES *********/
 
-/* @media (min-width: 650px) { */
-@media (min-width: 980px) {
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
 	.header-icons,
 	.header-profile {
 		align-self: flex-end;
 	}
 
-	.hero-container {
+	header {
+		height: 1025px;
+	}
+	/* .hero-container {
 		padding: 420px 0;
-} 
+}  */
 
 	.nav-bar {
 		justify-content: space-between;
@@ -230,13 +219,24 @@ nav a {
 
 }
 
-@media (min-width: 760px) {
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
 	.header-icons,
 	.header-profile {
 		align-self: flex-end;
 	}
-
-	.hero-container {
+	header {
+		height: 1250px;
+	}
+	/* .hero-container {
 		padding: 395px 0;
-	} 
+	}  */
+	.nav-bar {
+		padding: 0;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+	}
 }  
