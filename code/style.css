@@ -1,4 +1,4 @@
-/* Header */
+/********* Header **********/
 
 body,
 html {
@@ -63,7 +63,8 @@ p {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #dbc1bc ;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .topnav a {
@@ -77,12 +78,12 @@ p {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dbc1bc;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #fa382f;
   color: white;
 }
 
@@ -111,7 +112,7 @@ p {
   }
 }
 
-
+/********* Company name and title**********/
 .header-label {
   margin: 20px 0;
 }
@@ -140,9 +141,6 @@ p {
   justify-content: center;
 }
 
-
-
-
 .hIconCircle {
   width: 49px;
   height: 49px;
@@ -159,45 +157,66 @@ p {
   height: 22px;
 }
 
+/********* About me**********/
+.intend {
+  position: relative;
+  top: -7px;
+  font-weight: 700;
+  color: #fa382f;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  padding: 5px;
+  position: relative;
+  margin-right: 5px;
+  top: 2px;
+  background-color: #fa382f;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.grey {
+  background: #f4f4f4;
+}
+
+.summary-box p,
+.tech-box p {
+  font: 400 17px/29px Montserrat;
+  width: 80%;
+  text-align: center;
+}
+
 /*******MEDIA QUERIES *********/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   /* For tablets: */
 	.header-icons,
 	.header-profile {
 		align-self: flex-end;
 	}
 
-	/*.hero-container {
-		height: 1025px;
-		background-position: bottom;
-	}*/
-	/* .hero-container {
-		padding: 420px 0;
-}  */
-
-	.nav-bar {
-		justify-content: space-between;
-	}
-
-	
-	nav {
-		display: inline-block;
-	}
-	.hamburger {
-		display: none;
-}
 	/* .header-profile {
 		margin-bottom: -50px;
 	} */
 
-	/* .box {
+	.box {
 		padding: 60px 0;
-	} */
+	}
 
-	/* .summary-box p {
+	.summary-box p {
 		text-align: left;
-	} */
+	}
 
 	/* .featured-projects,
 	.my-thoughts {
@@ -225,17 +244,13 @@ p {
 	.header-profile {
 		align-self: flex-end;
 	}
-	/*.hero-container {
-		height: 1030px;
-		bottom: initial;
-	}*/
-	/* .hero-container {
-		padding: 395px 0;
-	}  */
+
 	.nav-bar {
 		padding: 15px;
     height: 72px;
     top: 0;
     z-index: 100;
-	}
+  }
+  
+
 }  
