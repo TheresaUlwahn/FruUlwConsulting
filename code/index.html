@@ -15,40 +15,40 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
     <title>FruUlw Consulting AB webpage</title>
   </head>
 
   <body>
     <header>
-      <section class="hero-container">
-        
-        <div class="navBar">
-          <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#about-me">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-          
-          <!-- <div style="padding-left:16px">
-            <h2>Responsive Topnav Example</h2>
-            <p>Resize the browser window to see how it works.</p>
-          </div> -->
-        
-          <script>
-          function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += " responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
-          </script>
+
+      <nav class="navBar navbar-inverse navbar-fixed-top">
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about-me">About</a>
+          <a href="#tech">Tech</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+         
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        </nav>
+        <section class="hero-container">
         <div class="header-icons">
           <div class="hIconCircle">
             <a href="https://www.linkedin.com/in/theresa-ulwahn-b719259/" target="_blank">
@@ -84,7 +84,7 @@
       </section>
     </header>
 
-     <!--creating container for the portfolio information-->
+     <!--Container for the portfolio information-->
      <section class="portfolio-container">
       <section class="container">
         <div class="summary-box box grey" id="about-me">
@@ -105,5 +105,98 @@
             as often as I can. &#128516
           </p>
         </div>
+
+        <div class="tech-box box" id="tech">
+          <h2>TECH</h2>
+
+          <p>
+            HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, HTML5-banners, Node.js, Mongo DB,
+            Web Accessibly, API:s, mob-programming, pair-programming, Github, Pascal
+          </p>
+        </div>
+
+        <section class="projects-container box grey">
+          <h2>FEATURED PROJECTS</h2>
+
+          <section class="featured-projects box">
+            <section class="projects">
+              <a href="https://github.com/TheresaUlwahn/myday" target="_blank">
+                <img src="./assets/Featured projects/MyDayFinalProject.png" alt="MyDayFinalProject look" />
+                <div class="hero-text">TIME TO REFLECT</div>
+                <div class="projects-info">
+                  <p>
+                    MY DAY - MY JOURNAL. A created web application with React Redux that offers a space for inner reflection. 
+                    Members only with log-in and registration, saving reflections in combinations with fetching pictures from and API, 
+                    storing both members and thoughts in the self built backend database with Node.js and MongoDB. 
+                    We call it My Day and it is our version of a digital journal >> 
+                  </p>
+                  <div class="project-languages">
+                    <p class="language">HTML5</p>
+                    <p class="language">CSS3</p>
+                    <p class="language">SASS</p>
+                    <p class="language">REACT REDUX</p>
+                    <p class="language">MONGODB</p>
+                  <p class="language">NODE.JS</p>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <section class="projects">
+              <a href="https://github.com/TheresaUlwahn/flowersandflowers" target="_blank">
+                <img src="./assets/Featured projects/FritillaryRedFlower.png" alt="Weatherapp look" />
+                <div class="hero-text">FLOWERS AND FLOWERS</div>
+                <div class="projects-info">
+                  <p>
+                    LES FLEURES. A user friendly application for people with a botanical interest. 
+                    Using React Redux and fetching pictures from a build API, including a way to comment on each of every flower detail page 
+                    and reading others reflections.>>
+                  </p>
+                
+                  <div class="project-languages">
+                    <p class="language">HTML5</p>
+                    <p class="language">CSS3</p>
+                    <p class="language">SASS</p>
+                    <p class="language">REACT REDUX</p>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <section class="projects"> 
+              <a href="https://github.com/TheresaUlwahn/project-react-native-app" target="_blank">
+                <img src="./assets/Featured projects/CrossFitShareSmall.jpg" alt="Weatherapp look" />
+                <div class="hero-text">FORWARD SOME POWER PICS</div>
+                <div class="projects-info">
+                  <p>
+                    THE REACT NATIVE APP. App build with React Native fetching strong CrossFit photos from an api to share>>
+                  </p>
+                
+                  <div class="project-languages">
+                    <p class="language">HTML5</p>
+                    <p class="language">CSS3</p>
+                    <p class="language">SASS</p>
+                    <p class="language">REACT NATIVE</p>
+                  </div>
+                </div>
+              </a>
+            </section>
+            <section class="projects"> 
+              <a href="https://github.com/TheresaUlwahn/HTML5-banner" target="_blank">
+                <img src="./assets/Featured projects/HTML5banner.png" alt="HTML5-BANNER look" />
+                <div class="hero-text">THE BANNER DOING IT'S THING</div>
+                <div class="projects-info">
+                  <p>
+                    HTML5-BANNER. A responsive banner ad build in HTML5 and Javascript using a script to make the products speak for themselves.  >> 
+                  </p>
+                  <div class="project-languages">
+                    <p class="language">HTML5</p>
+                    <p class="language">CSS3</p>
+                    <p class="language">SASS</p>
+                    <p class="language">JAVASCRIPT ES6</p>
+                  
+                  </div>
+                </div>
+              </a>
+            </section>
+  
       </section>
     </body>
