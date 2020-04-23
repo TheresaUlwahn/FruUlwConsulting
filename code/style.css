@@ -2,9 +2,9 @@
 
 body,
 html {
-	margin: 0;
-	height: 100%;
-	max-width: 100%;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   background: #ffff;
   font-family: "Roboto", sans-serif;
@@ -46,87 +46,71 @@ p {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center;
+	justify-content: center; */
 	height: 820px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Deskpic.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-  background-attachment: fixed;
-	position: relative;
-	display: block;
+  /* background-attachment: fixed; */
+	/* position: relative; */
+	/* display: block;	 */
 
 }
 
 /********* Nav-bar**********/
-	/*this div becomes the container for the header  display flex and the items are centered*/
-	/*padding on both of the sides, the horisontal parts to make space from the boarder*/
-	
-.nav-bar {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-	height: 80px;
-	display: flex;
-	align-items: center;
-	/*position: relative;*/
-	justify-content: space-evenly;
-	padding: 0px 16px;
-	overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.nav-bar p {
-	color: #fff;
-}
-/*nav bar becomes hamburger model*/
-/*this div becomes the container for the hamburger menu,  display flex*/
-/*same height and width to make it a square*/
-/*flex/direction column to make them separate*/
-/*justify content to make them spread out / space between the lines*/
-/*margin right for space between the hamburger and logo*/
-
-.nav-bar img {
-	display: none;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.hamburger {
-	display: flex;
-	width: 30px;
-	height: 30px;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-right: 24 px;
-}
-/*here the actual lines for the hamburger menu, same width as the container, but thinner*/
-
-.hamburger div {
-	width: 30px;
-	height: 5px;
-	background: #fff;
-	border-radius: 5px;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.nav-bar img {
-	width: 180px;
-	padding: 0px 15px;
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
-/*the nav is hidden on the small screen*/
 
-nav {
-	display: none;
+.topnav .icon {
+  display: none;
 }
-/*links get color blue by default. we make them white and no line under the text*/
-/*margin left to give space between the menu links and not mess with the outer edges*/
 
-nav a {
-	color: #fff;
-	text-decoration: none;
-	align-items: right;
-	margin-left: 16px;
-	margin-right: 16px;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 
 .header-label {
   margin: 20px 0;
@@ -153,7 +137,7 @@ nav a {
   display: flex;
 	text-align: center;
 	margin-top: 30px;
-    justify-content: center;
+  justify-content: center;
 }
 
 
