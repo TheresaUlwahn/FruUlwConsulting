@@ -70,7 +70,7 @@ p {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -79,12 +79,12 @@ p {
 
 .topnav a:hover {
   background-color: #dbc1bc;
-  color: black;
+  color: slategrey;
 }
 
 .topnav a.active {
-  background-color: #fa382f;
-  color: white;
+  background-color: #f8d3c0;
+  color: slategrey;
 }
 
 .topnav .icon {
@@ -115,6 +115,9 @@ p {
 /********* Company name and title**********/
 .header-label {
   margin: 20px 0;
+  align-self: center;
+  margin: auto;
+
 }
 
 .header-label p {
@@ -204,7 +207,8 @@ p {
 	.header-icons,
 	.header-profile {
 		align-self: flex-end;
-	}
+  }
+
 
 	/* .header-profile {
 		margin-bottom: -50px;
@@ -251,6 +255,7 @@ p {
     top: 0;
     z-index: 100;
   }
+  
   
 
 }  
