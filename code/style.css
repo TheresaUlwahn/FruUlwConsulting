@@ -61,6 +61,10 @@ p {
 
 /********* Nav-bar**********/
 
+.navbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  /* background-color: #dbc1bc; */
+}
 
 /* 
 .topnav {
@@ -141,7 +145,7 @@ p {
 .header-label {
   margin: 20px 0;
   align-self: center;
-  margin: auto;
+  /* margin: auto; */
   text-align: left;
   margin-left: 7%;
 
@@ -166,9 +170,10 @@ p {
 
 .header-icons {
   display: flex;
-	text-align: center;
-  margin-top: 112px;
-  justify-content: center;
+  text-align: center;
+  margin-top: 210px;
+  margin-left: 16px;
+  justify-content: left;
 }
 
 .hIconCircle {
@@ -313,15 +318,18 @@ a:link {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-	.header-icons,
-	.header-profile {
-    align-self: flex-end;
-    margin-right: 30px;
-	}
-
+  /* .header-profile, */
+  .header-icons{
+    align-self: center;
+    /* margin-right: 30px; */
+  }
   
   .header-label {
     text-align: left;
   }
-
+  
+  section .container {
+    margin: 0px;
+    display: contents;
+  }
 }  
