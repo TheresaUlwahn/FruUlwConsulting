@@ -8,6 +8,7 @@ html {
   overflow-x: hidden;
   background: #ffff;
   font-family: "Roboto", sans-serif;
+  
 }
 
 h1 {
@@ -20,6 +21,7 @@ h2 {
   color: #fff;
   background-color: #fa382f;
   padding: 0 4px;
+ 
 }
 
 h3 {
@@ -62,7 +64,7 @@ p {
 /********* Nav-bar**********/
 
 .navbar {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   /* background-color: #dbc1bc; */
 }
 
@@ -97,8 +99,11 @@ p {
 .header-icons {
   display: flex;
   text-align: center;
-  margin-top: 210px;
-  margin-left: 16px;
+  /* margin-top: 210px; */
+  margin-top: 340px;
+  margin-bottom: 10px;
+   /* padding-top: 340px; */
+  /* margin-left: 16px; */
   justify-content: left;
 }
 
@@ -132,7 +137,7 @@ p {
   padding: 5px;
   position: relative;
   margin-right: 5px;
-  top: 2px;
+  top: -1px;
   background-color: #fa382f;
   border-radius: 50%;
   display: inline-block;
@@ -151,6 +156,7 @@ p {
   background: #f4f4f4;
 }
 
+/********* Boxes with tech, projects and thoughts **********/
 .summary-box p,
 .tech-box p {
   font: 400 17px/29px Montserrat;
@@ -238,6 +244,8 @@ a:link {
   font: 700 17px/29px Roboto;
 }
 
+/********* Skills **********/
+
 .skills {
   display: flex;
   flex-flow: wrap;
@@ -258,6 +266,8 @@ a:link {
   flex-grow: 1;
   text-align: center;
 }
+
+/********* For more - links to social media **********/
 
 .icons {
   display: flex;
@@ -281,6 +291,8 @@ a:link {
   width: 22px;
   height: 22px;
 }
+
+/******* Footer *********/
 
 footer {
   top: 4875px;
@@ -361,6 +373,7 @@ footer {
   /* .header-profile, */
   .header-icons{
     align-self: center;
+    margin-left: 0px;
     /* margin-right: 30px; */
   }
   
