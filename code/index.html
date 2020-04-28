@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- link for css  -->
     <link rel="stylesheet" href="style.css" />
@@ -14,56 +14,33 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-      <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <!-- <link href="css/scrolling-nav.css" rel="stylesheet"> -->
 
     <title>FruUlw Consulting AB webpage</title>
   </head>
 
-  <body  id="page-top">
+  <body>
     <header>
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">FruUlw Consulting AB</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#tech">Tech</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#thoughts">Thoughts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#more">For more</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <nav>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </nav>
-
+        <div class="logo">
+        FruUlw Consulting AB
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact-me">Contact</a></li>
+           </ul>
+        </div>
+     </nav>
+      
       <section class="hero-container">
         <div class="header-label" id="home">
         <div class="header-icons">
@@ -93,9 +70,9 @@
           </div>
         </div>
 
-        <!-- <div class="header-label" id="home"> -->
+        <div class="header-label" id="home">
           <p>FRONTEND DEVELOPER: THERESA ULWAHN</p>
-          <h1>FruUlw Consulting AB</h1>
+          <h1>What you need today. For the future.</h1>
         </div>
 
       </section>
@@ -578,7 +555,7 @@
         </section>
       </section>
     </section>
-    <footer class="contact" id="contact">
+    <footer class="contact" id="contact-me">
       <h2>CONTACT</h2>
       <h3>Theresa Ulwahn</h3>
       <h3>FruUlw Consulting AB</h3>
@@ -587,18 +564,32 @@
     </footer>
   <!-- </body> -->
 
+</section>  
+<!-- <script type="text/javascript">
+
+  // Menu-toggle button
+
+  $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+              $("nav ul").toggleClass("showing");
+        });
+  });
+
+  // Scrolling Effect
+
+  $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+              $('nav').addClass('black');
+        }
+
+        else {
+              $('nav').removeClass('black');
+        }
+  })
 
 
-
-      </section>
-       <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+  </script> -->
   
-  <script src="js/scrolling-nav.js"></script>
-    </body>
+ 
+</body>
     </html>
