@@ -78,6 +78,7 @@ nav {
   justify-content: space-between;
   margin-right: 24 px;
   padding: 10px;
+  z-index: 2;
 }
 /*here the actual lines for the hamburger menu, same width as the container, but thinner*/
 
@@ -118,7 +119,7 @@ nav {
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 2px;
-  z-index: 100;
+  z-index: 2  ;
 }
 
 .menu {
@@ -126,6 +127,15 @@ nav {
   width: 100%;
   line-height: 60px;
 }
+
+/* .nav-bar-top.scrolled {
+  background-color: yellow !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:blue;
+} */
 
 nav ul {
   line-height: 60px;
@@ -140,8 +150,8 @@ nav ul {
   transition: 1s;
 }
 
-nav ul {
-  background: #000;
+.nav-bar-top ul {
+  background: black;
 }
 
 nav ul li {
@@ -611,7 +621,7 @@ footer {
   }
 
   header .logo {
-    padding: 25px 10px;
+    /* padding: 25px 10px; */
     width: 340px;
   }
 
