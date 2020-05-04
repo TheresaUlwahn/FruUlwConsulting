@@ -156,7 +156,7 @@ p {
 .banner-text a {
   display: flex;
   text-decoration: none;
-  background: #dbc1bc;
+  background: #fff;
   /* background: #fddfe7; */
   /* background: #f27064; */
   color: #2f4f4f;
@@ -173,7 +173,8 @@ p {
 #menu-area.cus-nav {
   /* background: #f27064; */
   /* background: #262626; */
-  background: #dbc1bc;
+  background: #fff;
+  /* background: #dbc1bc; */
   /* background: #fddfe7; */
   /* background: #fa382f; */
   z-index: 999;
