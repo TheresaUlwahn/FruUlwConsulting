@@ -6,7 +6,6 @@
 
 body,
 html {
-  /* margin: 0; */
   height: 100%;
   max-width: 100%;
   /* overflow-x: hidden; */
@@ -56,17 +55,6 @@ p {
   color: #000000;
 }
 
-/* .main-content div {
-  padding-top: 90px;
-}  */
-
-/* .banner-area {
-  background: url('assets/computer-electronics-hands-laptop-374768.jpg');
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top;
-  height: 100vh;
-}  */
 .hero-container {
 	width: 100%;
   margin: 0;
@@ -79,18 +67,7 @@ p {
   background-position: top;
   height: 100vh;
 }
-	/* align-items: center;
-	justify-content: center; */
-	/* height: 820px; */
-	/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Deskpic.JPG); */
-	/* background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center; */
-  /* background-attachment: fixed; */
-	/* position: relative; */
-	/* display: block;	 */
 
-/* } */
 /*********Navbar***********/
 
 #main {
@@ -179,7 +156,8 @@ p {
 .banner-text a {
   display: flex;
   text-decoration: none;
-  background: #fddfe7;
+  background: #dbc1bc;
+  /* background: #fddfe7; */
   /* background: #f27064; */
   color: #2f4f4f;
   /* background: #262626;
@@ -195,7 +173,8 @@ p {
 #menu-area.cus-nav {
   /* background: #f27064; */
   /* background: #262626; */
-  background: #fddfe7;
+  background: #dbc1bc;
+  /* background: #fddfe7; */
   /* background: #fa382f; */
   z-index: 999;
 }
