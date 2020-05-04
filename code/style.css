@@ -25,7 +25,7 @@ body {
 
 
 h1 {
-	font-size: 49px;
+	font-size: 78;
 	color: #fff;
 }
 
@@ -72,7 +72,8 @@ p {
   margin: 0;
 	display: flex;
   flex-direction: column;
-  background: url('assets/computer-electronics-hands-laptop-374768.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('assets/computer-electronics-hands-laptop-374768.jpg');
+  /* background: url('assets/computer-electronics-hands-laptop-374768.jpg'); */
   -webkit-background-size: cover;
   background-size: cover;
   background-position: top;
@@ -349,7 +350,8 @@ span {
 
 .header-label h1 {
   color: #fff;
-  font: Bold 40px/49px Montserrat;
+  font: Bold 50px/60px Montserrat;
+  /* font: Bold 40px/49px Montserrat; */
   text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
 }
 
@@ -641,6 +643,13 @@ footer {
     align-self: center;
     margin-left: 0px;
     /* margin-right: 30px; */
+  }
+
+  .header-label h1 {
+    color: #fff;
+    font: Bold 78px/88px Montserrat;
+    /* font: Bold 40px/49px Montserrat; */
+    text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
   }
   
   .header-label {
