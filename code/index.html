@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- link for css  -->
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" 
       rel="stylesheet"
@@ -14,75 +15,108 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
       rel="stylesheet"
     />
-
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"/> -->
-
     <title>FruUlw Consulting AB webpage</title>
   </head>
 
   <body>
-    <header>
-      <!-- Navigation -->
-      <nav class="nav-bar-top">
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="logo">
-        FruUlw Consulting AB
-        </div>
+    <div id="menu-area">  
+  
+      <div class="logo">   
+        <a href="#">
+          FruUlw Consulting AB
+        </a>
+      </div>  
+    
+      <div class="navbar-desktop">   
+        <ul> 
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#tech">Tech</a></li>
+          <li> <a href="#projects">Projects</a></li>
+          <li> <a href="#thoughts">Thoughts</a></li>
+          <li> <a href="#skills">Skills</a></li>
+          <li> <a href="#contactMe">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#tech">Tech</a>
+        <a href="#projects">Projects</a>
+        <a href="#thoughts">Thoughts</a>
+        <a href="#skills">Skills</a>
+        <a href="#contactMe">Contact</a>
+      </div>
       
-        <div class="menu">
-           <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about" class="nav-link" >About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact-me">Contact</a></li>
-           </ul>
-        </div>
-     </nav>
+      <span class="menu-btn" onclick="openNav()">
+        &#9776;
+      </span>
+  
+    </div>  
+  
+    <!-- <div class="banner-area">
       
-      <section class="hero-container">
-        <div class="header-label" id="home">
-        <div class="header-icons">
-          <div class="hIconCircle">
-            <a href="https://www.linkedin.com/in/theresa-ulwahn-b719259/" target="_blank">
-              <img
-                src="./assets/Linkedintransp.png" target="_blank"
-                class="hIconImg"
-                alt="LinkedInLogo"
-            /></a>
-          </div>
-          <div class="hIconCircle">
-            <a href="https://github.com/TheresaUlwahn?tab=repositories" target="_blank">
-              <img
-                src="./assets/Githubtransp.png"
-                class="hIconImg"
-                alt="GitHubLogo"
-            /></a>
-          </div>
-          <div class="hIconCircle">
-            <a href="https://stackoverflow.com/c/technigo/users/15" target="_blank">
-              <img
-                src="./assets/Stackoverflowtransp.png"
-                class="hIconImg"
-                alt="StuckoverflowLogo"
-            /></a>
-          </div>
+      <div class="banner-text">
+        <h2>Sticky Navbar</h2>
+        <a href="#">Learn More</a>
+      </div>
+    </div> -->
+  
+    <section class="hero-container">
+      <div class="header-label" id="home">
+      <div class="header-icons">
+        <div class="hIconCircle">
+          <a href="https://www.linkedin.com/in/theresa-ulwahn-b719259/" target="_blank">
+            <img
+              src="./assets/Linkedintransp.png" target="_blank"
+              class="hIconImg"
+              alt="LinkedInLogo"
+          /></a>
         </div>
-
-        <div class="header-label" id="home">
-          <p>FRONTEND DEVELOPER: THERESA ULWAHN</p>
-          <h1>What you need today. For the future.</h1>
+        <div class="hIconCircle">
+          <a href="https://github.com/TheresaUlwahn?tab=repositories" target="_blank">
+            <img
+              src="./assets/Githubtransp.png"
+              class="hIconImg"
+              alt="GitHubLogo"
+          /></a>
         </div>
-
-      </section>
-    </header>
+        <div class="hIconCircle">
+          <a href="https://stackoverflow.com/c/technigo/users/15" target="_blank">
+            <img
+              src="./assets/Stackoverflowtransp.png"
+              class="hIconImg"
+              alt="StuckoverflowLogo"
+          /></a>
+        </div>
+        <div class="hIconCircle">
+          <a href="https://www.instagram.com/mrsu_codes/" target="_blank">
+            <img
+              src="./assets/instagram.png"
+              class="hIconImg"
+              alt="InstagramLogo"
+          /></a>
+        </div>
+      </div>
+  
+      <div class="header-label" id="home">
+        <p>FRONTEND DEVELOPER: THERESA ULWAHN</p>
+        <h1>What you need today. For the future.</h1>
+      </div>
+  
+    </section>
+  
 
      <!--Container for the portfolio information-->
-    <section class="portfolio-container">
+     <section class="main-content" id="main">
+    <!-- <section class="portfolio-container" id="main"> -->
       <section class="container">
+
+        <!-- <div class="main-content" id="main"> -->
+          <div class="wrapper">
+
         <div class="summary-box box grey" id="about">
           <!--Summary-->
           <p><span class="intend">____</span><span class="circle"></span>
@@ -553,11 +587,19 @@
                   alt="StuckoverflowLogo"
               /></a>
             </div>
+            <div class="iconCircle">
+              <a href="https://www.instagram.com/mrsu_codes/" target="_blank">
+                <img
+                  src="./assets/red_IG.png"
+                  class="iconImg"
+                  alt="InstagramLogo"
+              /></a>
+            </div>
           </div>
         </section>
       </section>
     </section>
-    <footer class="contact" id="contact-me">
+    <footer class="contact" id="contactMe">
       <h2>CONTACT</h2>
       <h3>Theresa Ulwahn</h3>
       <h3>FruUlw Consulting AB</h3>
@@ -568,39 +610,13 @@
 
 </section>  
 
-<script>
-  $(function () {
-  $(document).scroll(function () {
-    var $nav = $("nav-bar-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-</script>
-
-<!-- <script type="text/javascript">
-
-  // Menu-toggle button
-
-  $(document).ready(function() {
-        $(".menu-icon").on("click", function() {
-              $("nav ul").toggleClass("showing");
-        });
-  });
-
-  // Scrolling Effect
-
-  $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-              $('nav').addClass('black');
-        }
-
-        else {
-              $('nav').removeClass('black');
-        }
-  })
 
 
-  </script> -->
+
+</div>
+<!-- </div> -->
+
+  <script src="main.js"></script> 
   
  
 </body>
