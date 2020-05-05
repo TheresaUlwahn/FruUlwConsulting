@@ -156,7 +156,7 @@ p {
 .banner-text a {
   display: flex;
   text-decoration: none;
-  background: #fff;
+  background: #b48685;
   /* background: #fddfe7; */
   /* background: #f27064; */
   color: #2f4f4f;
@@ -173,7 +173,7 @@ p {
 #menu-area.cus-nav {
   /* background: #f27064; */
   /* background: #262626; */
-  background: #fff;
+  background: white;
   /* background: #dbc1bc; */
   /* background: #fddfe7; */
   /* background: #fa382f; */
@@ -335,18 +335,21 @@ span {
   text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884);
 }
 
-/* .header-profile {
+.header-profile {
   width: 132px;
   height: 132px;
   border: 3px solid #fff;
   border-radius: 50%;
-} */
+  align-self: center;
+}
 
 .header-icons {
   display: flex;
-  text-align: center;
+  align-self: center;
+  /* text-align: center; */
+  margin-top: 140px;
   /* margin-top: 210px; */
-  margin-top: 340px;
+  /* margin-top: 340px; */
   margin-bottom: 10px;
    /* padding-top: 340px; */
   /* margin-left: 16px; */
@@ -549,7 +552,7 @@ footer {
   height: 270px;
   font-size: 15px;
   margin-right: 35px;
-  background-color: blue;
+  background-color: rgb(81, 63, 73);
   color: #ffffff;
 }
 .contact {
@@ -583,9 +586,9 @@ footer {
     text-align: left;
   }
 
-	/* .header-profile {
+	.header-profile {
 		margin-bottom: -50px;
-	} */
+	}
 
 	.box {
 		padding: 60px 0;
@@ -618,7 +621,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  /* .header-profile, */
+  .header-profile,
   .header-icons{
     align-self: center;
     margin-left: 0px;

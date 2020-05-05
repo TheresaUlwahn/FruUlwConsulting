@@ -12,8 +12,8 @@ window.addEventListener("scroll", function(){
 
 // Side navbar pushing out from the right
 function openNav() {
-  document.getElementById("mySidenav").style.width = "197px";
   // document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.width = "197px";
   document.getElementById("main").style.marginRight = "197px";
   document.getElementById("home").style.marginRight = "197px";
   document.getElementById("contactMe").style.marginRight = "197px";
