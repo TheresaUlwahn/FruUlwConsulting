@@ -321,11 +321,15 @@ span {
   margin-left: 7%;
   /* text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884); */
 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .header-label p {
   color: #fff;
   font: Bold 13px/15px Roboto;
+  align-self: flex-start;
   /* text-shadow: 0 2px 5px rgba(8, 84, 94, 0.884); */
 }
 
@@ -596,17 +600,16 @@ footer {
 
 @media only screen and (min-width: 650px) {
   /* For tablets: */
-	.header-icons,
-	.header-profile {
+	.header-icons {
 		align-self: flex-end;
   }
   .header-label {
     text-align: left;
   }
 
-	.header-profile {
+	/* .header-profile {
 		margin-bottom: -50px;
-	}
+	} */
 
 	.box {
 		padding: 60px 0;
@@ -639,11 +642,21 @@ footer {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .header-profile,
-  .header-icons{
+
+  .header-icons {
     align-self: center;
     margin-left: 0px;
+    margin-top: 186px;
     /* margin-right: 30px; */
+  }
+
+  .header-profile {
+    align-self: center;
+    margin-left: 111px;
+    /* margin-left: 97px;  */
+    /* align-self: center;
+    margin-left: 0px; */
+
   }
 
   .header-label h1 {
@@ -655,6 +668,8 @@ footer {
   
   .header-label {
     text-align: left;
+    display: block;
+
   }
   
   section .container {
